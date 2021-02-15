@@ -1,10 +1,14 @@
-echo "Enter year:"
-temp=0
-read year
-if [ $(($year % 4)) -eq $temp ]
+read -p "Enter Date :" date
+read -p "Enter Month :" month
+month_march=3
+month_june=6
+start_date=0
+end_date=32
+if [ $month -gt $month_march  ] && [ $month -lt $month_june ] && [ $date -gt $s>
 then
-   echo $year "Leap Year"
+   echo "True"
 else
-   echo $year "Not leap Year"
+   echo "False"
 fi
+
 
